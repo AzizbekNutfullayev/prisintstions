@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(135deg, #e0f7e9, #ffffff);
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+  color: #2d3a2d;
+}
+
+.presentation-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+/* Slide Box */
+.slide {
+  background: #ffffff;
+  border-radius: 30px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+  padding: 60px;
+  max-width: 950px;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.5s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Layout styles */
+.slide.center {
+  flex-direction: column;
+  text-align: center;
+}
+
+.slide.left {
+  flex-direction: row;
+  text-align: left;
+}
+
+.slide.right {
+  flex-direction: row-reverse;
+  text-align: left;
+}
+
+.slide-content-box {
+  flex: 1;
+  z-index: 2;
+}
+
+.slide-title {
+  font-size: 2.4rem;
+  color: #167a43;
+  margin-bottom: 10px;
+}
+
+.slide-subtitle {
+  color: #3ea164;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.slide-text {
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.7;
+  white-space: pre-wrap;
+}
+
+.slide-image {
+  width: 220px;
+  height: 220px;
+  object-fit: contain;
+  margin-left: 40px;
+  filter: drop-shadow(0 8px 14px rgba(0, 0, 0, 0.15));
+  z-index: 2;
+}
+
+/* Decorative background circles */
+.slide::before {
+  content: "";
+  position: absolute;
+  top: -30px;
+  right: -30px;
+  width: 160px;
+  height: 160px;
+  background: rgba(76, 175, 80, 0.12);
+  border-radius: 50%;
+}
+
+.slide::after {
+  content: "";
+  position: absolute;
+  bottom: -40px;
+  left: -40px;
+  width: 200px;
+  height: 200px;
+  background: rgba(76, 175, 80, 0.08);
+  border-radius: 50%;
+}
+
+/* Controls */
+.controls {
+  margin-top: 25px;
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  justify-content: center;
+}
+
+.controls button {
+  background: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 10px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.controls button:hover {
+  background: #43a047;
+  transform: scale(1.05);
+}
+
+.controls span {
+  color: #333;
+  font-weight: 500;
+}
+
+/* Footer */
+.footer {
+  position: absolute;
+  bottom: 12px;
+  font-size: 0.9rem;
+  color: #5f705f;
+}
