@@ -60,6 +60,7 @@ If it becomes too hot → white daisies spread (cooling it).
 👨‍🔬 Ecologist — Researched Daisyworld as a living system  
 💻 Programmer — Built the simulation logic  
 📊 Data Analyst — Collected and visualized temperature and growth data  
+🗣️ Communicator (Me) — Designed and presented this project clearly
 
 Teamwork showed how digital models can explain real sustainability principles.`,
       image: "https://cdn-icons-png.flaticon.com/512/3471/3471347.png",
@@ -126,7 +127,7 @@ Thank you for listening! 🌱`,
         <button onClick={next}>Next →</button>
       </div>
 
-
+          
     </div>
   );
 }
